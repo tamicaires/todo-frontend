@@ -1,0 +1,8 @@
+<div class="dropdown" [class.show]="isOpen">
+  <button class="btn btn-secondary dropdown-toggle" type="button" (click)="toggleDropdown()">
+    <ng-content select="[dropdownToggle]"></ng-content>
+  </button>
+  <ul class="dropdown-menu" [class.show]="isOpen">
+    <ng-content select="[dropdownMenu]"></ng-content>
+  </ul>
+</div>
